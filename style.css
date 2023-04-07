@@ -50,7 +50,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:1000000ch;
+    width:60ch;
 }
 
 .red {
