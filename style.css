@@ -50,6 +50,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width:50ch;
 }
 
 .red {
@@ -87,18 +88,12 @@ p {
   border-radius: 50%;
   transform-origin: center center;
   -webkit-animation: spin 2s linear infinite;
-  -moz-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
-}
-
-@-moz-keyframes spin{
-  0% { -moz-transform:rotate(0deg); }
-  100% { -moz-transform: rotate(360deg); }
 }
 
 @keyframes spin {
@@ -110,8 +105,6 @@ p {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  -moz-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
   animation-duration: 1s;
@@ -127,12 +120,6 @@ p {
   from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
-
-@-moz-keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-
 
 #myDiv {
   display: none;
