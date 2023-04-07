@@ -23,7 +23,7 @@ body {
 }
 
 body {
-  background-image: url("https://wallpapers.com/images/featured/qbc6mlnwowjbszld.jpg"), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+  background-image: url("data/cherry.jpg"), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,7 +66,7 @@ p {
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
 
@@ -106,12 +106,12 @@ p {
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
+  from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
 
