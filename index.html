@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>wackube</title>
-  <link rel="stylesheet" href="./style.css">
+<html>
+    <head>
+        <title>FGT</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/436659d283070b8572ef5f99f3f4da24">
+        
+    </head>
 
-</head>
-<body>
+    <body onload="myFunction()" style="margin:0;">
 
+      
+        <img id="loader" src="https://codehs.com/uploads/e575e1ebe561709de29fcad290cb73b3">
+      
 
+        <div style="" id="myDiv" class="container animate-bottom">
+        <div class="box">
+    <p>Sleep beneath the <span class="pink">cherry blossoms</span>, <span class="red"> Red </span> <span class="white"> White </span> <span class="butterfly">Butterfly </span>.</p>
+        </div>
+        </div>
 
-<div class="header">
+<script>
+var myVar;
 
-<div class="inner-header flex">
-<h1>peik
-  <br>
-  <a href="https://spectrum.avris.it/eTPB">etpb</a>
-  <br>
-  <a href="https://cake.avris.it/bA3">ba3</a>
-</h1>
-</div>
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
 
-
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-</g>
-</svg>
-</div>
-
-</div>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "flex";
+}
+</script>
 
 
-
-
-<div class="content flex"></div>
-
-</body>
+    </body>
 </html>
