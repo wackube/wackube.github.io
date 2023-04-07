@@ -50,7 +50,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:50ch;
+    width:1000000ch;
 }
 
 .red {
@@ -109,6 +109,7 @@ p {
   animation-name: animatebottom;
   animation-duration: 1s;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 @-webkit-keyframes animatebottom {
