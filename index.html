@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Peik</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="icon" type="image/x-icon" href="/data/petal.png">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terminal - wackube@dionysus</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
+    <body>
 
-    <body onload="myFunction()" style="margin:0;">
-
-
-        <img id="loader" src="data/loading.png">
-
-
-        <div style="" id="myDiv" class="container animate-bottom">
-        <div class="box">
-    <p>Sleep beneath the <span class="pink">cherry blossoms</span>, <span class="red"> Red </span> <span class="white"> White </span> <span class="butterfly">Butterfly </span>.</p>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="terminal-button close"></div>
+                <div class="terminal-button minimize"></div>
+                <div class="terminal-button maximize"></div>
+            </div>
+            <div class="terminal-title">wackube@dionysus: ~</div>
         </div>
+        <div class="terminal-body" id="terminalBody">
+            <div>
+                <span class="prompt">wackube@dionysus</span><span class="prompt-separator">:</span><span class="prompt-tilde">~</span><span class="prompt-dollar">$</span> <span class="command" id="fastfetchCommand">fastfetch</span>
+            </div>
+            <div class="output-line">
+                <div class="logo-area" id="logoArea">
+                </div>
+                <div class="info-area" id="infoArea">
+                </div>
+            </div>
         </div>
+    </div>
 
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "flex";
-}
-</script>
-
-
+    <script src="earth-frames.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
