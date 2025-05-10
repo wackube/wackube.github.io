@@ -78,7 +78,7 @@ body {
 .maximize { background-color: var(--green); }
 
 .terminal-title {
-    color: var(--overlay0);
+    color: var(--mauve);
     font-size: 0.9em;
     margin-left: auto;
     margin-right: auto;
